@@ -384,6 +384,7 @@ Rails.application.routes.draw do
                 get :orders
               end
             end
+            get 'unicas/memberships', to: 'unicas#memberships'
             resource :linear, controller: 'linear', only: [] do
               collection do
                 delete :destroy

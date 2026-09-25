@@ -411,6 +411,7 @@
       "MACROS": "Macros",
       "LINEAR_ISSUES": "Linked Linear Issues",
       "SHOPIFY_ORDERS": "Shopify Orders",
+      "UNICAS_MEMBERSHIPS": "Juntemonos",
       "SHARED_FILES": "Attachments"
     },
     "SHARED_FILES": {
@@ -424,6 +425,26 @@
       "MORE_COUNT": "+{count}",
       "UNTITLED_FILE": "Untitled file",
       "JUMP_TO_MESSAGE": "Jump to message"
+    },
+    "UNICAS": {
+      "ERROR": "Could not load Juntemonos data",
+      "EMPTY": "No Unicas user for this phone",
+      "NO_PHONE": "No phone number on this contact",
+      "DOCUMENT": "DNI {number}",
+      "MONEY_POOLS": "Money pools",
+      "FIELDS": {
+        "NAME": "Name",
+        "ROLES": "Role",
+        "EMAIL": "Email",
+        "PHONE": "Phone",
+        "DOCUMENT": "Document",
+        "GENDER": "Gender",
+        "BIRTHDATE": "Date of birth",
+        "ACTIVE": "Active",
+        "LAST_LOGIN": "Last login"
+      },
+      "YES": "Yes",
+      "NO": "No"
     },
     "SHOPIFY": {
       "ORDER_ID": "Order #{id}",

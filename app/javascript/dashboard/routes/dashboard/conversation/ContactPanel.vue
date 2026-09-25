@@ -21,6 +21,7 @@ import SharedFiles from './SharedFiles.vue';
 import Draggable from 'vuedraggable';
 import MacrosList from './Macros/List.vue';
 import ShopifyOrdersList from 'dashboard/components/widgets/conversation/ShopifyOrdersList.vue';
+import UnicasMembershipsList from 'dashboard/components/widgets/conversation/UnicasMembershipsList.vue';
 import SidebarActionsHeader from 'dashboard/components-next/SidebarActionsHeader.vue';
 import LinearIssuesList from 'dashboard/components/widgets/conversation/linear/IssuesList.vue';
 import LinearSetupCTA from 'dashboard/components/widgets/conversation/linear/LinearSetupCTA.vue';
@@ -284,6 +285,19 @@ onMounted(() => {
               "
             >
               <ShopifyOrdersList :contact-id="contactId" />
+            </AccordionItem>
+          </div>
+          <div v-else-if="element.name === 'unicas_memberships'">
+            <AccordionItem
+              :title="$t('CONVERSATION_SIDEBAR.ACCORDION.UNICAS_MEMBERSHIPS')"
+              :is-open="isContactSidebarItemOpen('is_unicas_memberships_open')"
+              compact
+              @toggle="
+                value =>
+                  toggleSidebarUIState('is_unicas_memberships_open', value)
+              "
+            >
+              <UnicasMembershipsList :contact-id="contactId" />
             </AccordionItem>
           </div>
           <div v-else-if="element.name === 'contact_notes'">
